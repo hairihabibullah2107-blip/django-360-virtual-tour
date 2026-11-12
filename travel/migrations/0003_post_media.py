@@ -1,0 +1,4 @@
+from django.db import migrations, models
+class Migration(migrations.Migration):
+    dependencies = [('travel','0002_comment')]
+    operations = [migrations.AddField(model_name='post',name='img',field=models.ImageField(blank=True,upload_to='images/')),migrations.AddField(model_name='post',name='virtualtour',field=models.FileField(blank=True,upload_to='images/'))]
